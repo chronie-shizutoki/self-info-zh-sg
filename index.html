@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-SG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自介 (华语，新加坡)</title>
+    <link rel="stylesheet" href="components/splash-screen.css">
+    <link rel="stylesheet" href="components/style.css">
+    <link rel="stylesheet" href="components/liquid-glass-block.css">
+    <link rel="stylesheet" href="components/birthday.css">
+</head>
+<body>
+    <!-- Privacy Consent Popup -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <h3 class="privacy-title">隐私政策同意</h3>
+            <p class="privacy-text">本网站使用Google Analytics 4（GA4）进行分析，以改进用户体验和网站性能。</p>
+            <p class="privacy-text">访问时，会收集您的个人数据（如设备信息、IP地址、Cookie、精确位置信息等），并将其分享给Google海外服务器。</p>
+            <p class="privacy-text">为了保护您的隐私，我们会尽力匿名化/假名化您的数据。</p>
+            <div class="privacy-links">
+                <a href="https://storage.googleapis.com/support-kms-prod/KYaKZ5CAhIQ4rjgEFWIy6qKRzRSJjdGjrYFW" target="_blank" class="privacy-link">了解更多（英文）</a>
+                <a href="document.html" class="privacy-link">隐私政策</a>
+            </div>
+            <div class="privacy-buttons">
+                <button id="consent-accept" class="consent-button accept">继续...访问？</button>
+                <button id="consent-reject" class="consent-button reject">拒绝...退出？</button>
+            </div>
+            <p class="privacy-text consent-warning">继续访问可能会将您的数据流向美国。可能受到美国法律管辖。</p>
+        </div>
+    </div>
+<body>
+    <!-- Loading Screen with Girl's Prayer -->
+    <div id="loading-screen" class="splash-screen hidden">
+        <div class="splash-content-girl">
+            <div class="loader"></div>
+            <p class="splash-text">少女祈祷中…</p>
+        </div>
+    </div>
+
+    <canvas id="sakura-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1;"></canvas>
+    <div class="header" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+        <div class="glass-container-apple">
+            <p class="info-text">Hi，初次见面～ (◕‿◕✿)</p>
+            <p><span class="info-text">你可以叫我</span><strong class="highlight">静時猫猫糖（しずときねこたん shizutoki nekotan）</strong></p>
+            <p><span class="info-text">或者像星星一样闪亮的名字 </span><strong class="highlight">Chronie</strong><span class="info-text"> 也可以哦！✨ </span></p>
+        </div>
+    </div>
+<br>
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">🎂 诞生小秘密</h3>
+        <div class="compact-countdown" id="countdown">
+            <span class="cake-icon">🎂</span>
+            <span class="birthday-today">今天、就是生日哦！(＊´∀｀*)ﾉ</span>
+        </div>
+        <ul>
+            <li><span class="info-text">在</span><strong class="highlight">Virgo</strong><strong class="highlight ql-size-5">魔法绽放的第一天</strong><span class="info-text">来到这个世界～</span></li>
+            <li><span class="info-text">（</span><strong class="highlight">农历七月十一</strong><span class="info-text">的月光是我的摇篮曲哟！🌙） </span></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">🗣️语言小口袋</h3>
+        <ul>
+            <li><strong style="color: #d5ffbf;">日语、English、简体中文、繁体中文</strong><span class="info-text">都可以哦～</span></li>
+            <li><span class="info-text">（切换语言就像换帽子一样好玩呢！(◕‿◕✿)） </span></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">🌈 ACGN Fan</h3>
+        <ul>
+            <li><span class="info-text">确认！</span></li>
+            <li><span class="info-text">Anime、Manga、Game、Novel是我小宇宙的<strong class="highlight">基本粒子</strong>～★~(◠‿◕✿) </span></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">💖 心灵小拼图 (INFJ-T 版)</h3>
+        <ul>
+            <li><span class="info-text">  </span><span class="highlight">充电能量场： </span><span class="info-text">83%需要安静的独处时间</span><strong style="color: #ffeebf;">（躲在被窝里看书最幸福啦～(｡>ㅅ<｡)）</strong></li>
+            <li><span class="info-text">  </span><span class="highlight">脑内小剧场：</span><span class="info-text"> 74%天马行空中</span><strong style="color: #ffeebf;">（幻想世界的大门永远敞开！🚪✨） </strong></li>
+            <li><span class="info-text">  </span><span class="highlight">感受力天线： </span><span class="info-text">82%超敏感接收中</span><strong style="color: #ffeebf;">（小情绪也许能感应到哦 (｡･ω･｡)） </strong></li>
+            <li><span class="info-text">  </span><span class="highlight">行动小策略：</span><span class="info-text"> 83%Plan好才做喵</span><strong style="color: #ffeebf;">（列清单是我的小爱好✓） </strong></li>
+            <li><span class="info-text">  </span><span class="highlight">心情小云朵： </span><span class="info-text">82%容易下雨☁️➡️🌧️ </span><strong style="color: #ffeebf;">（但一道彩虹就能马上开心回啦！(๑>◡<๑)） </strong></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">🍀 幸运小雷达</h3>
+        <p><span class="info-text">信号很弱中……（</span><strong class="highlight">捡到四叶草会爽一整天！</strong><span class="info-text">(⁄ ⁄•⁄ω⁄•⁄ ⁄)）</span></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="glass-container-apple">
+        <h3 class="section-title">🎮 游戏小天地</h3>
+        <p><span class="info-text">目前只玩</span><strong class="highlight">《Genshin》</strong><span class="info-text">和</span><strong class="highlight">《Honkai: Star Rail (崩铁)》</strong><span class="info-text">哦～☆ﾐ(o･ω･)ﾉ）</span></p>
+        <p><span class="info-text">☆ﾐ(o･ω･)ﾉ </span></p>
+        </div>
+        <br>
+        <div class="glass-container-apple" style="text-align: center;">
+        <p><span class="info-text">请多多指教～ </span></p>
+        <p><span class="info-text">希望和你成为Kaki！一起分享快乐的小宇宙吧～ (●'◡'●) ♡ </span></p>
+        <p><span class="info-text">(๑˃ᴗ˂)ﻭ ✧ </span></p>
+        </div>
+    </div>
+
+    <div style="padding: 8px 16px; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: center; font-size: 14px; color: white; font-weight: 500; border: 1px solid rgba(255, 255, 255, 0.2);">
+        <p>This version is localized and translated by AI, and the text may be insufficient, so please be patient.</p>
+        <p>这个版本是AI本地化和翻译的，可能不够完美，还请多多包涵啦~</p>
+    </div>
+    <div style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); padding: 8px 16px; background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); text-align: center; font-size: 14px; color: #ffcc80; font-weight: 500; z-index: 1000; border: 1px solid rgba(255, 255, 255, 0.2);">
+        ✨ 更新于2025年8月19日 ✨ | <a href="https://chronie-shizutoki.github.io/self-info-ja" style="color: #ffcc80;">日本語</a>
+    </div>
+    <style>
+        @media (max-width: 450px) {
+            div[style*="font-size: 14px"] {
+                font-size: 9px !important;
+                padding: 3px 3px;
+            }
+        }
+    </style>
+    <script src="components/birthday.js"></script>
+    <script src="components/splash-screen.js"></script>
+    <script type="module" src="anime/sakura.js"></script>
+<script type="module" src="analytics/analytics.js"></script>
+</body>
+</html>
