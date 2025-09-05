@@ -39,7 +39,7 @@ class LanguageSelector {
         const button = document.createElement('button');
         button.id = 'language-button';
         button.className = 'language-button';
-        button.innerHTML = '🌐 あ/A';
+        button.innerHTML = '🌐 文/A';
         
         // Style the button to match the glass effect theme
         button.style.position = 'fixed';
